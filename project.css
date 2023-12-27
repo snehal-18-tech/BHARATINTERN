@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Lato&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-links img {
+    width: 30px; /* Adjust the size of the logos */
+    height: auto;
+}
+h1{
+    font-family: sans-serif; 
+    margin: 0;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+
