@@ -1,152 +1,231 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Lato&family=Source+Code+Pro:ital,wght@0,300;1,300&display=swap');
-*{
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Lato&family=Martel+Sans:wght@600&family=Source+Code+Pro:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.cdnfonts.com/css/netflix-font');
+
+* {
     padding: 0;
+    margin: 0;
 }
 
-.sidebar{
-   background-color: rgb(164, 162, 162);
-    width: 434px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: larger;
-    height: 100vh;
-}
-.sidebar nav{
-    padding: 20px;
-}
-.sidebar nav li{
-    list-style: none;
-    font-size: 20px;
-    padding: 33px 0;
-}
-.sidebar nav li a{
-    text-decoration: none;
-    color: rgb(34, 34, 34);
-}
-.main{
-   /* background-color: yellow;*/
-    width: 90vw;
-}
-.container{
-    display: flex;
-}
-.infocontainer{
-   /* background-color: brown;*/
-    height: 51vh;
-    width: 60vw;
-    margin: 144px auto;
-    display: flex;
-    justify-content: space-around;
-}
-.devinfo{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.hello{
-    font-size: 45px;
-    font-family: 'Bricolage Grotesque', sans-serif;
-}
-.name{
-    font-size: 40px;
-    font-weight: bold;
-}
-.about{
-    font-size: 30px;
-    font-family: 'Bricolage Grotesque', sans-serif;
-
-}
-.btn{
-    margin-top: 34px;
-}
-.btn{
- padding: 9px 14px;
- border-radius: 20px;
- color: aliceblue;
- background-color: rgb(22, 43, 178);
- font-weight: bold;
- font-size: 15px;
- margin: 20px 6px;
- cursor: pointer;
-}
-.btn-sm{
-    font-size: 20px;
-    padding: 10px 19px;
-    margin: 12px 0;
-}
-.btn:hover{
-    background-color: white;
-    color:  rgb(22, 43, 178);
-}
-.devpic img{
-    height: 51vh;
-}
-.contactform{
-    padding: 0 34px;
-    padding-top: 100px;
-
-    font-family: 'Bricolage Grotesque', sans-serif;
-}
-.contactform h1{
- font-family: 'Courier New', Courier, monospace;   
- text-align: center;
-}
-.contactform form div{
-    padding: 10px 0;
-    display: flex;
-    flex-direction: column;
-}
-.contactform form div input{
-   width: 26vw;
-   border-radius: 5px;
-   margin: 6px 0 0 0;
-   padding: 3px;
-}
-#emailHelp{
-    font-size: 11px;
-    color: midnightblue;
-    margin: 0 5px;
-    padding: 3px 0 0 0;
-}
-.intro h1{
-    font-family: sans-serif; 
-    margin: 0 23px;
+body {
+    background-color: black;
 }
 
-.intro h2{
-    font-family: sans-serif;
-    margin: 0 24px;
-    padding-top: 10px;
+.main {
+    background-image: url("assets/img/bg.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 70vh;
+    position: relative;
 }
-.intro p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0 25px;
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.60;
+    position: absolute;
+    top: 0;
+    background-color: black;
 }
-.skillcontainer{
-    padding: 24px;
-}
-.skill{
-    width: 200px;
-    height: 6px;
-    background-color: red;
-    border: 2px solid black;
-}
-.skillitem{
+
+nav {
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;
     display: flex;
     align-items: center;
+    height: 62px;
+
 }
-.hundered{
-width: 200px;
-background-color: blueviolet;
-}
-.fifty{
+
+nav img {
+    color: red;
     width: 100px;
-    background-color: aqua;
+    position: relative;
+    z-index: 10;
 }
-.t5{
-    width: 50px;
-    background-color: blanchedalmond;
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: 'Netflix Font', sans-serif;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 12px;
+    padding: 0 30px;
+}
+
+.hero> :first-child {
+    font-weight: 900;
+    font-size: 2em;
+    line-height: 1em;
+    word-spacing: -0.3rem;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5em;
+
+}
+
+.hero> :nth-child(3) {
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+.separation {
+    height: 6px;
+    background-color: rgb(53, 52, 52);
+    position: relative;
+    z-index: 20;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(247, 243, 243, 0.021);
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main input {
+    padding: 7px 100px 6px 14px;
+    color: white;
+    font-weight: 800;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 30vw;
+
+
+}
+
+.secImg video {
+    position: absolute;
+    top: 75px;
+    right: 0;
+    width: 32vw;
+    height: 20vh;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+section.first>div :nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: 95;
+}
+.feq h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+.feq{
+    background-color: black;
+    color: white;
+    padding: 34px;
+   
+}
+.feqbox svg{
+    filter: invert(1);
+}
+.feqbox:hover{
+  
+    background-color: gray;
+}
+.feqbox {
+    transition: all 1s ease-out;
+    font-size: 20px;
+    display: flex;
+    background-color: rgb(44, 43, 43);
+    padding: 20px;
+    max-width: 60vw;
+    margin:  10px auto;
+    justify-content: space-between;
+    cursor: pointer;
+}
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+footer .questions{
+    padding: 34px 0;
+}
+.footer a{
+    font-size: 10px;
+    color: white;
 }
 
 
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+  
+
+    
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
